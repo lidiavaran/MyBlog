@@ -1,15 +1,19 @@
-# Fișiere macOS
+# Ignore macOS system files
 .DS_Store
 
-# Fișiere temporare
+# Ignore node_modules if you ever add node stuff later
+node_modules/
+
+# Ignore log files
 *.log
 
-# Foldere de build sau cache
-/node_modules/
-/dist/
-/build/
+# Ignore build folders if any
+dist/
+build/
 
-# Backup-uri și fișiere generate de editor
+# Ignore system files
 *.swp
-*.tmp
-*.bak
+*.swo
+
+# Ignore any sensitive files (just in case)
+.env
