@@ -34,17 +34,17 @@ MyBlog:
 1. Clonează repository:
 ```bash
 git clone https://github.com/lidiavaran/MyBlog.git
+```
+
 2. Deschide folderul docs și apoi index.html în browser sau rulează un server local:
 ```bash
 cd MyBlog/docs
 python3 -m http.server 8000
 ```
 
-Accesează http://localhost:8000 pentru a vedea site-ul.
+## Live demo
+https://lidiavaran.github.io/MyBlog/
 
 ## Autor
 
 Văran Lidia - https://github.com/lidiavaran
-
-## Live demo
-https://lidiavaran.github.io/MyBlog/
