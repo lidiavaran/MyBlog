@@ -7,10 +7,9 @@ MyBlog este un site web multi-pagină, creat pentru a demonstra competențe în 
 
 **Funcționalități cheie**
 - Navigare dinamică cu meniu lateral responsiv
-- Galerie foto cu lightbox și slideshow
+- Galerie foto cu slideshow și efect Lightbox
 - Chatbot interactiv (întrebări cu răspunsuri)
-- Formular de contact cu afișare a datelor trimise
-- Design responsive și animații CSS
+- Formular de contact cu validare și afișare date trimise
 
 ## 🛠️ Tehnologii utilizate
 - HTML5
@@ -19,21 +18,28 @@ MyBlog este un site web multi-pagină, creat pentru a demonstra competențe în 
 - Google Fonts
 
 ## 📂 Structura proiectului
-MyBlog:
-       - html/ # Pagini HTML (index.html, about.html, gallery.html, form.html, chatbot.html)
-       - css/ # Fișiere CSS (index.css, about.css, gallery.css, form.css, chatbot.css, menu.css, style.css)
-       - js/ # Scripturi JavaScript (chatbot.js, menu.js, gallery.js, form.js) 
-       - images/ # Imagini utilizate pe site
-       -.gitignore
-       - README.md
-
+MyBlog/
+├── docs/               # Toate fișierele care vor fi publicate pe GitHub Pages
+│   ├── css/            # Fișiere CSS (design, stiluri)
+│   ├── images/         # Imagini folosite pe site
+│   ├── js/             # Scripturi JavaScript (chatbot, galerie, meniu, etc.)
+│   ├── index.html      # Pagina principală
+│   ├── about.html      # Alte pagini HTML (ex: despre)
+│   ├── form.html       # Pagina cu formular
+│   └── gallery.html    # Pagina galerie imagini
+├── .gitignore          # Fișiere și foldere ignorate de Git
+├── README.md      
 
 ## 🚀 Instalare și rulare locală
 1. Clonează repository:
 ```bash
 git clone https://github.com/lidiavaran/MyBlog.git
-2. Deschide local html/index.html în browser (dublu click sau Open File în browser / editor).
-Recomandare: folosește extensia Live Server în VS Code pentru reload automat.
+2. Deschide folderul docs și apoi index.html în browser sau rulează un server local:
+```bash
+cd MyBlog/docs
+python3 -m http.server 8000
+```
+Accesează http://localhost:8000 pentru a vedea site-ul.
 
 Autor
 
