@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formular de Contact - MyBlog</title>
+  
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>  
+<body>
+  <header>
+    <h1>Formular de Contact</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="about.html">Despre mine</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="chatbot.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="contactForm" action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Informații personale</legend>
+
+        <label for="nume">Nume complet:</label>
+        <input type="text" id="nume" name="nume" required />
+
+        <label for="email">Adresă de email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <p>Gen:</p>
+        <label for="feminin">
+          <input type="radio" id="feminin" name="gen" value="feminin" /> Feminin
+        </label>
+        <label for="masculin">
+          <input type="radio" id="masculin" name="gen" value="masculin" /> Masculin
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferințe de conținut</legend>
+
+        <p>Ce tipuri de postări te interesează?</p>
+        <label for="lectii">
+          <input type="checkbox" id="lectii" name="preferinte[]" value="lectii" /> Lecții de chitară
+        </label>
+        <label for="experiente">
+          <input type="checkbox" id="experiente" name="preferinte[]" value="experiente" /> Experiențe personale
+        </label>
+        <label for="sfaturi">
+          <input type="checkbox" id="sfaturi" name="preferinte[]" value="sfaturi" /> Sfaturi utile
+        </label>
+
+        <label for="nivel">Nivel de experiență muzicală:</label>
+        <select id="nivel" name="nivel">
+          <option value="incepator">Începător</option>
+          <option value="mediu">Mediu</option>
+          <option value="avansat">Avansat</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <label for="comentariu">Comentariu sau mesaj:</label>
+        <textarea
+          id="comentariu"
+          name="comentariu"
+          rows="5"
+          cols="40"
+          placeholder="Scrie ceva aici..."
+        ></textarea>
+
+        <label for="fisier">Încarcă o poză preferată cu chitara ta:</label>
+        <input type="file" id="fisier" name="fisier" />
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit">Trimite</button>
+        <button type="reset">Resetează</button>
+      </div>
+    </form>
+
+    <div
+      id="mesajConfirmare"
+      style="
+        margin-top: 20px;
+        background: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+      "
+    ></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Varan Lidia – Blog</p>
+  </footer>
+
+  <script src="../js/form.js"></script>
+</body>
+</html>

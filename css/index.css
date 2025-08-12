@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Reset și bază */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #fce4ec;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 2px solid #f8bbd0;
+  overflow: hidden;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.8em;
+  margin: 0;
+}
+
+/* Floricica decorativă înaintea titlului, tot cu Roboto */
+header h1::before {
+  content: "✿";
+  font-family: 'Roboto', sans-serif;
+  color: #f06292;
+  font-size: 1.5em;
+  margin-right: 8px;
+  opacity: 0;
+  animation: fadeSlideIn 1.5s forwards ease-out;
+  animation-delay: 0.6s;
+}
+
+/* Keyframes animație titlu */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d81b60;
+  font-weight: 700;
+  background-color: #ffe4ec;
+  padding: 12px 25px;
+  border-radius: 25px;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 6px;
+  left: 50%;
+  background-color: #d81b60;
+  transition: 0.4s ease;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+  width: 60%;
+}
+
+.navbar a:hover {
+  background-color: #f8bbd0;
+  color: #880e4f;
+}
+
+main {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+article {
+  background-color: #fff;
+  border: 1px solid #f8bbd0;
+  padding: 22px 30px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(216, 27, 96, 0.1);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: postFadeSlideIn 1s forwards ease-out;
+  animation-delay: 0.7s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes postFadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+article:hover {
+  box-shadow: 0 8px 20px rgba(216, 27, 96, 0.25);
+  transform: translateY(-6px);
+}
+
+article h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.9em;
+  margin-top: 0;
+  cursor: default;
+  transition: color 0.3s ease;
+}
+article h2:hover {
+  color: #d81b60;
+  cursor: pointer;
+}
+
+article p {
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer::before {
+  content: "♡";
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #f06292;
+  font-family: 'Roboto', sans-serif;
+}
+
+article p a {
+  color: #d81b60;
+  font-weight: bold;
+  text-decoration: underline dotted;
+  font-family: 'Roboto', sans-serif;
+}
+article p a:hover {
+  color: #880e4f;
+}
+
+.poza-centru {
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 90%;
+  height: auto;
+}
+
+
+@media (min-width: 1025px) {
+  main {
+    padding: 50px 40px;
+  }
+  .navbar a {
+    font-size: 1.2em;
+  }
+  header h1 {
+    font-size: 3em;
+  }
+  article h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  main {
+    padding: 40px 25px;
+  }
+  .navbar ul {
+    gap: 18px;
+  }
+  .navbar a {
+    padding: 10px 18px;
+    font-size: 1em;
+  }
+  header h1 {
+    font-size: 2.6em;
+  }
+  article h2 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main {
+    padding: 30px 15px;
+  }
+  article {
+    padding: 15px 20px;
+  }
+  article h2 {
+    font-size: 1.5em;
+  }
+  .navbar a {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
+}
+
+.btn-feminin {
+  background-color: #f8bbd0;
+  color: #880e4f;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-feminin:hover {
+  background-color: #f48fb1;
+}

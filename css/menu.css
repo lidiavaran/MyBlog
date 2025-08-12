@@ -1,0 +1,89 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #f8f0f4;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  #close-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #222;
+    display: block;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #ff7fa3;
+    color: white;
+  }
+  
+  #menu-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    display: none;
+    color: #333;
+    user-select: none;
+  }
+  
+  #main {
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  #main.shifted {
+    margin-left: 250px;
+  }
+  
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: block;
+    }
+  }
+  

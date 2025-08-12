@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(255, 192, 203, 0.9);
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+  
+    font-family: "Brush Script MT", cursive;
+    margin: 0;
+    padding: 0;
+  }
+  

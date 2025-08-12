@@ -1,0 +1,181 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff7f0;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f8d9e0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #222222;
+
+    opacity: 0;
+    animation: slideDown 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover,
+  .navbar a:focus {
+    color: #a3005a; 
+  }
+  
+  main {
+    padding: 30px;
+  }
+  
+  #intro {
+    text-align: center;
+  }
+  
+  #img2 {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  section#educatie table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  section#educatie th,
+  section#educatie td {
+    border: 1px solid #f8d9e0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  section table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  section th,
+  section td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e6b8c4;
+  }
+  
+  section th {
+    background-color: #fcd6e0;
+    color: #4d0039;
+    font-weight: bold;
+  }
+  
+  section h2 {
+    text-align: center;
+    color: #a3005a;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+  }
+  
+ 
+  section {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  section:hover {
+    box-shadow: 0 6px 12px rgba(163, 0, 90, 0.25);
+    transform: translateY(-4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  @media (max-width: 1024px) {
+    table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    header h1 {
+      font-size: 30px;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    h1,
+    h2 {
+      font-size: 1.8rem;
+    }
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    img#img2 {
+      width: 100%;
+      height: auto;
+    }
+    table,
+    tbody,
+    tr,
+    td,
+    th {
+      display: block;
+      width: 100%;
+    }
+    thead {
+      display: none;
+    }
+    header h1 {
+      font-size: 24px;
+    }
+  }
+  
