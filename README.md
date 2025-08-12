@@ -18,17 +18,17 @@ MyBlog este un site web multi-pagină, creat pentru a demonstra competențe în 
 - Google Fonts
 
 ## 📂 Structura proiectului
-MyBlog/
-├── docs/               # Toate fișierele care vor fi publicate pe GitHub Pages
-│   ├── css/            # Fișiere CSS (design, stiluri)
-│   ├── images/         # Imagini folosite pe site
-│   ├── js/             # Scripturi JavaScript (chatbot, galerie, meniu, etc.)
-│   ├── index.html      # Pagina principală
-│   ├── about.html      # Alte pagini HTML (ex: despre)
-│   ├── form.html       # Pagina cu formular
-│   └── gallery.html    # Pagina galerie imagini
-├── .gitignore          # Fișiere și foldere ignorate de Git
-├── README.md      
+MyBlog: 
+- docs (Toate fișierele care vor fi publicate pe GitHub Pages)
+- css (Fișiere CSS: design, stiluri)
+- images (Imagini folosite pe site)
+- js (Scripturi JavaScript: chatbot, galerie, meniu)
+- index.html (Pagina principală)
+- about.html
+- form.html (Pagina cu formular)
+- gallery.html (Pagina galerie imagini)
+- .gitignore         
+- README.md      
 
 ## 🚀 Instalare și rulare locală
 1. Clonează repository:
@@ -39,9 +39,10 @@ git clone https://github.com/lidiavaran/MyBlog.git
 cd MyBlog/docs
 python3 -m http.server 8000
 ```
+
 Accesează http://localhost:8000 pentru a vedea site-ul.
 
-Autor
+## Autor
 
 Văran Lidia - https://github.com/lidiavaran
 
