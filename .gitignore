@@ -1,19 +1,19 @@
 # Ignore macOS system files
 .DS_Store
 
-# Ignore node_modules if you ever add node stuff later
+# Ignore node modules (in case of future Node.js usage)
 node_modules/
 
 # Ignore log files
 *.log
 
-# Ignore build folders if any
+# Ignore build folders
 dist/
 build/
 
-# Ignore system files
+# Ignore temporary editor files
 *.swp
 *.swo
 
-# Ignore any sensitive files (just in case)
+# Ignore environment variables files
 .env
