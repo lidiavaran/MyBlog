@@ -1,0 +1,15 @@
+# Fișiere macOS
+.DS_Store
+
+# Fișiere temporare
+*.log
+
+# Foldere de build sau cache
+/node_modules/
+/dist/
+/build/
+
+# Backup-uri și fișiere generate de editor
+*.swp
+*.tmp
+*.bak
